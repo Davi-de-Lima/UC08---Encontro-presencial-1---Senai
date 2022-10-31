@@ -1,0 +1,32 @@
+/* 
+Dada a capacidade de cada caixa, caso a lista de peças seja superior a 10, imprima uma
+mensagem informando não ter capacidade suficiente.
+*/
+
+/*
+ Caso a peça tenha um mome com quantidade inferior a 3 caracteres, informe uma mensagem de erro.
+*/
+
+
+let listaDePecas = ["Peça 01","AB","Peça AB","Peça X","Peça 02","Peça XY","D"]; 
+
+
+qtd - listaDePecas.length;
+
+
+// Verificação tamanho lista 
+if( qtd > 10 ){
+console.log("Item não pode ser cadastrado!");
+}else{
+    console.log("Item não pode ser cadastrado!")
+}
+
+//Verificação nome
+for( let i = 0; i <qtd; i++ ){
+ let peca = listaDePecas[i];
+if( peca.length < 3 ){
+    console.log("O nome da peça tem menos de 3 letras");
+}else{
+console.log("O nome da peça tem mais de 3 letras");
+}
+}
